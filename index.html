@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface Node</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="alpha-container">
+        <h2>Node Inscription</h2>
+        <form id="dataEntryForm">
+            <div class="field-set-one">
+                <label for="identityLabel">Full Name</label>
+                <input type="text" id="identityLabel" name="identityTag" placeholder="Enter your full name" required>
+            </div>
+            <div class="field-set-two">
+                <label for="signalNumber">Contact Number</label>
+                <input type="tel" id="signalNumber" name="contactSignal" placeholder="Your contact number" required>
+            </div>
+            <div class="field-set-three">
+                <label for="locationString">Address</label>
+                <textarea id="locationString" name="residenceString" rows="4" placeholder="Your current address" required></textarea>
+            </div>
+            <div class="field-set-four">
+                <label for="entityName">Company Name</label>
+                <input type="text" id="entityName" name="businessTitle" placeholder="Name of your company" required>
+            </div>
+            <div class="field-set-five">
+                <label for="electronicMail">Email Address</label>
+                <input type="email" id="electronicMail" name="mailAddress" placeholder="Your email" required>
+            </div>
+            <div class="field-set-six">
+                <label for="sectionIdentifier">Department</label>
+                <select id="sectionIdentifier" name="workUnit" required>
+                    <option value="">Choose Section</option>
+                    <option value="resourceManagement">Human Resources</option>
+                    <option value="revenueStream">Sales</option>
+                    <option value="codeForge">Development</option>
+                    <option value="marketStrategy">Marketing</option>
+                    <option value="various">Other</option>
+                </select>
+            </div>
+            <div class="field-set-seven">
+                <label>Biological Attribute</label>
+                <div class="attributeChoices">
+                    <label><input type="radio" name="bioSex" value="male" required> Male</label>
+                    <label><input type="radio" name="bioSex" value="female"> Female</label>
+                    <label><input type="radio" name="bioSex" value="unspecified"> Prefer not to say</label>
+                </div>
+            </div>
+            <button type="submit" class="actionButton">Submit Data</button>
+        </form>
+    </div>
+</body>
+</html>
